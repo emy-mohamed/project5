@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h2>النظام</h2>
+
+    <a href="pages/home.html" target="contentFrame">
+      <i class="fa fa-home"></i> الرئيسية
+    </a>
+<div class="menu-item">
+  <a href="#" onclick="toggleMenu(event)">
+    <i class="fa fa-users"></i> إدارة المستخدمين
+    <i class="fa fa-angle-down arrow"></i>
+  </a>
+
+  <div class="submenu">
+    <a href="pages/users.html" target="contentFrame">المستخدمين</a>
+    <a href="pages/roles.html" target="contentFrame">الأدوار</a>
+    <a href="pages/customers.html" target="contentFrame">العملاء</a>
+  </div>
+</div>
+
+    <a href="pages/messages.html" target="contentFrame">
+      <i class="fa fa-envelope"></i> الرسائل
+    </a>
+
+    <a href="pages/notifications.html" target="contentFrame">
+      <i class="fa fa-bell"></i> التنبيهات
+    </a>
+
+    <a href="pages/settings.html" target="contentFrame">
+      <i class="fa fa-gear"></i> الإعدادات
+    </a>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="main">
+    <iframe name="contentFrame" src="pages/home.html"></iframe>
+  </div>
+
+</div>
+<script>
+function toggleMenu(event) {
+  event.preventDefault();
+
+  let menuItem = event.currentTarget.parentElement;
+  menuItem.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #f1f5f9;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #0a1633;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #1d4ed8;
+      color: #fff;
+    }
+
+    .card i {
+      font-size: 30px;
+      color: #1d4ed8;
+      margin-bottom: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover i {
+      color: #fff;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: gray;
+    }
+
+    .card:hover p {
+      color: #e5e7eb;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>لوحة التحكم</h1>
+
+  <div class="cards">
+
+    <div class="card">
+      <i class="fa fa-users"></i>
+      <h3>إدارة علاقات العملاء</h3>
+      <p>CRM System</p>
+    </div>
+
+    <div class="card">
+      <i class="fa fa-coins"></i>
+      <h3>الإدارة المالية</h3>
+      <p>Financial Management</p>
+    </div>
+
+    <div class="card">
+      <i class="fa fa-user-tie"></i>
+      <h3>الموارد البشرية</h3>
+      <p>Human Resources</p>
+    </div>
+
+    <div class="card">
+      <i class="fa fa-scale-balanced"></i>
+      <h3>الإدارة القانونية</h3>
+      <p>Legal Department</p>
+    </div>
+
+    <div class="card">
+      <i class="fa fa-file-invoice"></i>
+      <h3>العروض والأسعار</h3>
+      <p>Offers & Quotations</p>
+    </div>
+
+    <div class="card">
+      <i class="fa fa-cash-register"></i>
+      <h3>نقطة البيع</h3>
+      <p>POS System</p>
+    </div>
+
+    <div class="card">
+      <i class="fa fa-box"></i>
+      <h3>إدارة المنتجات</h3>
+      <p>Products Management</p>
+    </div>
+
+    <div class="card">
+      <i class="fa fa-diagram-project"></i>
+      <h3>إدارة المشاريع</h3>
+      <p>Projects Management</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
